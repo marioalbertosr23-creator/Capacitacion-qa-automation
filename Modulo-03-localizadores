@@ -1,1 +1,44 @@
+Modulo-03-localizadores
 
+Los localizadores son direcciones o rutas que permiten identificar y encontrar un recurso dentro de un sistema o en Internet. Estos recursos pueden ser archivos, carpetas, páginas web o cualquier otro elemento al que se quiera acceder. Gracias a los localizadores, el sistema sabe exactamente dónde se encuentra la información solicitada.
+
+Son esenciales porque facilitan el acceso a los recursos de forma rápida y organizada, evitando tener que buscarlos manualmente. En el caso de Internet, por ejemplo, un localizador como una URL indica al navegador la ubicación exacta de una página web para poder cargarla correctamente. Del mismo modo, en un sistema operativo, la ruta de un archivo permite localizarlo sin importar en qué carpeta esté almacenado.
+
+En resumen, los localizadores son fundamentales porque hacen posible acceder a la información de manera precisa y eficiente, tanto en un ordenador como en una red o en Internet.
+
+Los selectores CSS son reglas que permiten indicar a qué elementos de una página web se les aplicarán determinados estilos. Gracias a ellos, es posible modificar la apariencia de uno o varios elementos de forma sencilla y organizada.
+
+Selector por clase (.clase): se utiliza para aplicar el mismo estilo a varios elementos. Los elementos que comparten una misma clase reciben el mismo formato, por lo que es uno de los selectores más utilizados.
+Selector por ID (#id): sirve para seleccionar un único elemento de la página, ya que cada ID debe ser exclusivo. Se emplea cuando se quiere aplicar un estilo específico a un elemento concreto.
+Selector por atributo ([atributo]): permite seleccionar elementos que contienen un determinado atributo o un valor concreto en ese atributo. Es útil para aplicar estilos según las características de un elemento, sin depender de su clase o ID.
+Selectores jerárquicos: se utilizan para seleccionar elementos según su posición dentro del documento HTML. Por ejemplo, es posible aplicar un estilo a todos los párrafos que estén dentro de una sección determinada o a los elementos que sean hijos directos de otro.
+Selectores múltiples: permiten seleccionar varios elementos diferentes al mismo tiempo utilizando una sola regla CSS. De esta manera, varios elementos pueden compartir los mismos estilos sin necesidad de escribir varias reglas independientes.
+
+En conjunto, los selectores CSS hacen posible aplicar estilos de forma precisa y organizada, facilitando el diseño y el mantenimiento de las páginas web.
+
+XPath es un lenguaje que se utiliza para localizar y seleccionar elementos dentro de un documento XML o HTML. Es muy empleado en el desarrollo web, las pruebas automatizadas y el web scraping, ya que permite encontrar elementos de forma precisa.
+
+XPath absoluto: indica la ruta completa desde la raíz del documento hasta el elemento que se quiere localizar. Es muy preciso, pero también más frágil, ya que cualquier cambio en la estructura de la página puede hacer que deje de funcionar.
+XPath relativo: comienza la búsqueda desde cualquier parte del documento, sin necesidad de indicar toda la ruta. Es más flexible y resistente a los cambios en la estructura de la página, por lo que suele ser el más utilizado.
+XPath por texto: permite localizar un elemento según el texto que contiene. Es útil cuando un elemento no tiene un identificador o una clase específica, pero sí un texto que lo distingue de los demás.
+XPath combinado: consiste en utilizar varios criterios al mismo tiempo, como atributos, texto y relaciones entre elementos. De esta forma, se consigue una búsqueda más precisa y se reducen las posibilidades de seleccionar un elemento incorrecto.
+
+En resumen, XPath ofrece diferentes formas de localizar elementos en un documento. La elección entre un XPath absoluto, relativo, por texto o combinado dependerá de la estructura de la página y de la precisión que se necesite en cada caso.
+
+Los IDs y los atributos únicos son formas de identificar elementos concretos dentro de una página web. Se utilizan con frecuencia en desarrollo web y en herramientas de automatización, ya que permiten localizar elementos de forma rápida y precisa.
+
+IDs: un ID es un identificador que debe ser único dentro de una página HTML. Esto significa que solo puede existir un elemento con ese mismo ID. Cuando un elemento dispone de un ID estable, suele ser el mejor localizador, ya que es fácil de identificar y normalmente no cambia con frecuencia.
+Atributos únicos: además del ID, algunos elementos cuentan con otros atributos que también pueden servir para identificarlos, como name, data-testid, title o aria-label. Si estos atributos tienen un valor único, también son buenos localizadores, especialmente cuando el elemento no dispone de un ID.
+¿Cuándo preferir cada tipo de localizador?
+
+Siempre que sea posible, es recomendable utilizar un ID, ya que es el método más directo, rápido y fiable para localizar un elemento. Si el elemento no tiene un ID o este cambia con frecuencia, lo mejor es recurrir a un atributo único que permanezca estable. En cambio, los localizadores basados únicamente en la posición del elemento o en rutas muy largas, como algunos XPath absolutos, deberían evitarse porque pueden dejar de funcionar si cambia la estructura de la página.
+
+En resumen, la mejor práctica es utilizar primero un ID, después un atributo único y, solo cuando no exista ninguna de estas opciones, emplear otros tipos de localizadores como selectores CSS o XPath.Los IDs y los atributos únicos son formas de identificar elementos concretos dentro de una página web. Se utilizan con frecuencia en desarrollo web y en herramientas de automatización, ya que permiten localizar elementos de forma rápida y precisa.
+
+IDs: un ID es un identificador que debe ser único dentro de una página HTML. Esto significa que solo puede existir un elemento con ese mismo ID. Cuando un elemento dispone de un ID estable, suele ser el mejor localizador, ya que es fácil de identificar y normalmente no cambia con frecuencia.
+Atributos únicos: además del ID, algunos elementos cuentan con otros atributos que también pueden servir para identificarlos, como name, data-testid, title o aria-label. Si estos atributos tienen un valor único, también son buenos localizadores, especialmente cuando el elemento no dispone de un ID.
+¿Cuándo preferir cada tipo de localizador?
+
+Siempre que sea posible, es recomendable utilizar un ID, ya que es el método más directo, rápido y fiable para localizar un elemento. Si el elemento no tiene un ID o este cambia con frecuencia, lo mejor es recurrir a un atributo único que permanezca estable. En cambio, los localizadores basados únicamente en la posición del elemento o en rutas muy largas, como algunos XPath absolutos, deberían evitarse porque pueden dejar de funcionar si cambia la estructura de la página.
+
+En resumen, la mejor práctica es utilizar primero un ID, después un atributo único y, solo cuando no exista ninguna de estas opciones, emplear otros tipos de localizadores como selectores CSS o XPath.
