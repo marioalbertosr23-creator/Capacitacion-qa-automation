@@ -72,4 +72,136 @@ curl: permite realizar solicitudes a páginas web o servidores directamente desd
 
 En conjunto, estos comandos ayudan a comprobar el estado de la conexión, conocer la configuración de la red y comunicarse con servidores de forma rápida desde la línea de comandos.
 
+Modulo-03-localizadores
 
+Los localizadores son direcciones o rutas que permiten identificar y encontrar un recurso dentro de un sistema o en Internet. Estos recursos pueden ser archivos, carpetas, páginas web o cualquier otro elemento al que se quiera acceder. Gracias a los localizadores, el sistema sabe exactamente dónde se encuentra la información solicitada.
+
+Son esenciales porque facilitan el acceso a los recursos de forma rápida y organizada, evitando tener que buscarlos manualmente. En el caso de Internet, por ejemplo, un localizador como una URL indica al navegador la ubicación exacta de una página web para poder cargarla correctamente. Del mismo modo, en un sistema operativo, la ruta de un archivo permite localizarlo sin importar en qué carpeta esté almacenado.
+
+En resumen, los localizadores son fundamentales porque hacen posible acceder a la información de manera precisa y eficiente, tanto en un ordenador como en una red o en Internet.
+
+Los selectores CSS son reglas que permiten indicar a qué elementos de una página web se les aplicarán determinados estilos. Gracias a ellos, es posible modificar la apariencia de uno o varios elementos de forma sencilla y organizada.
+
+Selector por clase (.clase): se utiliza para aplicar el mismo estilo a varios elementos. Los elementos que comparten una misma clase reciben el mismo formato, por lo que es uno de los selectores más utilizados.
+Selector por ID (#id): sirve para seleccionar un único elemento de la página, ya que cada ID debe ser exclusivo. Se emplea cuando se quiere aplicar un estilo específico a un elemento concreto.
+Selector por atributo ([atributo]): permite seleccionar elementos que contienen un determinado atributo o un valor concreto en ese atributo. Es útil para aplicar estilos según las características de un elemento, sin depender de su clase o ID.
+Selectores jerárquicos: se utilizan para seleccionar elementos según su posición dentro del documento HTML. Por ejemplo, es posible aplicar un estilo a todos los párrafos que estén dentro de una sección determinada o a los elementos que sean hijos directos de otro.
+Selectores múltiples: permiten seleccionar varios elementos diferentes al mismo tiempo utilizando una sola regla CSS. De esta manera, varios elementos pueden compartir los mismos estilos sin necesidad de escribir varias reglas independientes.
+
+En conjunto, los selectores CSS hacen posible aplicar estilos de forma precisa y organizada, facilitando el diseño y el mantenimiento de las páginas web.
+
+XPath es un lenguaje que se utiliza para localizar y seleccionar elementos dentro de un documento XML o HTML. Es muy empleado en el desarrollo web, las pruebas automatizadas y el web scraping, ya que permite encontrar elementos de forma precisa.
+
+XPath absoluto: indica la ruta completa desde la raíz del documento hasta el elemento que se quiere localizar. Es muy preciso, pero también más frágil, ya que cualquier cambio en la estructura de la página puede hacer que deje de funcionar.
+XPath relativo: comienza la búsqueda desde cualquier parte del documento, sin necesidad de indicar toda la ruta. Es más flexible y resistente a los cambios en la estructura de la página, por lo que suele ser el más utilizado.
+XPath por texto: permite localizar un elemento según el texto que contiene. Es útil cuando un elemento no tiene un identificador o una clase específica, pero sí un texto que lo distingue de los demás.
+XPath combinado: consiste en utilizar varios criterios al mismo tiempo, como atributos, texto y relaciones entre elementos. De esta forma, se consigue una búsqueda más precisa y se reducen las posibilidades de seleccionar un elemento incorrecto.
+
+En resumen, XPath ofrece diferentes formas de localizar elementos en un documento. La elección entre un XPath absoluto, relativo, por texto o combinado dependerá de la estructura de la página y de la precisión que se necesite en cada caso.
+
+Los IDs y los atributos únicos son formas de identificar elementos concretos dentro de una página web. Se utilizan con frecuencia en desarrollo web y en herramientas de automatización, ya que permiten localizar elementos de forma rápida y precisa.
+
+IDs: un ID es un identificador que debe ser único dentro de una página HTML. Esto significa que solo puede existir un elemento con ese mismo ID. Cuando un elemento dispone de un ID estable, suele ser el mejor localizador, ya que es fácil de identificar y normalmente no cambia con frecuencia.
+Atributos únicos: además del ID, algunos elementos cuentan con otros atributos que también pueden servir para identificarlos, como name, data-testid, title o aria-label. Si estos atributos tienen un valor único, también son buenos localizadores, especialmente cuando el elemento no dispone de un ID.
+¿Cuándo preferir cada tipo de localizador?
+
+Siempre que sea posible, es recomendable utilizar un ID, ya que es el método más directo, rápido y fiable para localizar un elemento. Si el elemento no tiene un ID o este cambia con frecuencia, lo mejor es recurrir a un atributo único que permanezca estable. En cambio, los localizadores basados únicamente en la posición del elemento o en rutas muy largas, como algunos XPath absolutos, deberían evitarse porque pueden dejar de funcionar si cambia la estructura de la página.
+
+En resumen, la mejor práctica es utilizar primero un ID, después un atributo único y, solo cuando no exista ninguna de estas opciones, emplear otros tipos de localizadores como selectores CSS o XPath.Los IDs y los atributos únicos son formas de identificar elementos concretos dentro de una página web. Se utilizan con frecuencia en desarrollo web y en herramientas de automatización, ya que permiten localizar elementos de forma rápida y precisa.
+
+IDs: un ID es un identificador que debe ser único dentro de una página HTML. Esto significa que solo puede existir un elemento con ese mismo ID. Cuando un elemento dispone de un ID estable, suele ser el mejor localizador, ya que es fácil de identificar y normalmente no cambia con frecuencia.
+Atributos únicos: además del ID, algunos elementos cuentan con otros atributos que también pueden servir para identificarlos, como name, data-testid, title o aria-label. Si estos atributos tienen un valor único, también son buenos localizadores, especialmente cuando el elemento no dispone de un ID.
+¿Cuándo preferir cada tipo de localizador?
+
+Siempre que sea posible, es recomendable utilizar un ID, ya que es el método más directo, rápido y fiable para localizar un elemento. Si el elemento no tiene un ID o este cambia con frecuencia, lo mejor es recurrir a un atributo único que permanezca estable. En cambio, los localizadores basados únicamente en la posición del elemento o en rutas muy largas, como algunos XPath absolutos, deberían evitarse porque pueden dejar de funcionar si cambia la estructura de la página.
+
+En resumen, la mejor práctica es utilizar primero un ID, después un atributo único y, solo cuando no exista ninguna de estas opciones, emplear otros tipos de localizadores como selectores CSS o XPath.
+
+Modulo-04-pepinillo
+
+Gherkin es un lenguaje de escritura sencillo y fácil de entender que se utiliza para describir el comportamiento esperado de una aplicación. Su principal característica es que emplea un lenguaje muy cercano al lenguaje natural, por lo que puede ser leído tanto por desarrolladores como por testers, analistas o clientes, incluso aunque no tengan conocimientos de programación.
+
+En la metodología BDD (Behavior-Driven Development) o Desarrollo Guiado por el Comportamiento, Gherkin sirve para definir de forma clara cómo debe comportarse una aplicación en diferentes situaciones. De esta manera, todos los miembros del equipo comparten una misma comprensión de los requisitos antes de comenzar el desarrollo o las pruebas.
+
+Los escenarios en Gherkin suelen escribirse utilizando palabras clave como Feature (Funcionalidad), Scenario (Escenario), Given (Dado), When (Cuando) y Then (Entonces). Esta estructura permite describir las condiciones iniciales, la acción que realiza el usuario y el resultado esperado de una forma ordenada y fácil de seguir.
+
+En resumen, Gherkin es una herramienta fundamental en BDD porque facilita la comunicación entre todas las personas involucradas en el proyecto y permite convertir los requisitos del negocio en escenarios de prueba claros, comprensibles y fáciles de automatizar.
+
+La sintaxis de Gherkin utiliza una serie de palabras clave que permiten escribir escenarios de prueba de una forma estructurada y fácil de entender. Cada una de ellas tiene una función específica dentro de la descripción del comportamiento de una aplicación.
+
+Feature (Funcionalidad): se utiliza para indicar la funcionalidad o característica que se quiere describir. Normalmente incluye una breve explicación de qué parte del sistema se va a probar.
+Scenario (Escenario): define un caso concreto dentro de una funcionalidad. Cada escenario representa una situación que se quiere comprobar y describe un comportamiento específico de la aplicación.
+Given (Dado): establece las condiciones iniciales del escenario, es decir, el estado en el que se encuentra el sistema antes de realizar una acción. Sirve para indicar el contexto de la prueba.
+When (Cuando): describe la acción que realiza el usuario o el evento que ocurre durante el escenario. Es el paso donde se indica qué sucede en la prueba.
+Then (Entonces): define el resultado esperado después de realizar la acción. Se utiliza para comprobar si el comportamiento de la aplicación es el correcto.
+And (Y): permite añadir más pasos relacionados con el contexto, las acciones o los resultados, evitando tener que repetir palabras clave como Given, When o Then.
+
+Scenario Outline y Examples son elementos de Gherkin que permiten crear escenarios parametrizados, es decir, realizar la misma prueba varias veces utilizando diferentes datos sin tener que escribir un escenario nuevo para cada caso.
+
+Scenario Outline (Esquema del escenario): se utiliza cuando un escenario tiene la misma estructura, pero necesita probar distintos valores. En lugar de escribir varias veces los mismos pasos, se utilizan variables entre símbolos de menor y mayor (< >) que después serán sustituidas por los datos de la tabla de ejemplos.
+Examples (Ejemplos): contiene la información que se utilizará para reemplazar las variables del Scenario Outline. Los datos se organizan en una tabla, donde cada fila representa una ejecución diferente del escenario.
+
+En Gherkin, existen elementos adicionales que ayudan a organizar mejor los escenarios y hacer que los archivos de pruebas sean más claros y fáciles de mantener.
+
+Background (Contexto): se utiliza para definir pasos comunes que deben ejecutarse antes de todos los escenarios de una misma funcionalidad. De esta forma, se evita repetir las mismas instrucciones en cada Scenario. Por ejemplo, si todos los escenarios necesitan que el usuario esté registrado o que se abra una página concreta, esos pasos pueden colocarse en un Background.
+@Tags (Etiquetas): son etiquetas que se escriben utilizando el símbolo @ y sirven para clasificar y organizar escenarios o funcionalidades. Permiten seleccionar qué pruebas se quieren ejecutar, por ejemplo, pruebas de inicio de sesión, pruebas críticas o pruebas de una determinada sección de la aplicación.
+Comentarios: se utilizan para añadir aclaraciones dentro del archivo Gherkin sin que afecten a la ejecución de las pruebas. Normalmente se escriben comenzando la línea con el símbolo #. Son útiles para explicar partes del código, añadir notas o facilitar la comprensión del equipo.
+
+Modulo-05-git-github
+
+Git y GitHub están relacionados, pero cumplen funciones diferentes dentro del desarrollo de software.
+
+Git: es un sistema de control de versiones que se instala en el ordenador y permite registrar los cambios realizados en un proyecto. Gracias a Git, los desarrolladores pueden guardar diferentes versiones de sus archivos, volver a estados anteriores, trabajar en ramas diferentes y controlar la evolución de un proyecto.
+GitHub: es una plataforma online que utiliza Git para almacenar y compartir repositorios en Internet. Permite trabajar en equipo, guardar copias de seguridad de los proyectos, revisar cambios realizados por otros usuarios y colaborar en el desarrollo de software.
+
+En resumen, Git es la herramienta que controla las versiones de un proyecto, mientras que GitHub es un servicio web donde se pueden alojar y compartir esos proyectos utilizando Git.
+
+Instalación y configuración de Git
+
+Para empezar a utilizar Git, primero es necesario instalarlo en el equipo. Una vez instalado, se recomienda realizar una configuración inicial indicando la identidad del usuario que aparecerá asociada a los cambios realizados en los proyectos.
+
+Los dos comandos principales son:
+
+git config --global user.name
+Permite establecer el nombre del usuario que aparecerá en los registros de Git.
+git config --global user.email
+Sirve para configurar el correo electrónico asociado a la cuenta de Git. Normalmente se utiliza el mismo correo que está vinculado a la cuenta de GitHub.
+
+Los comandos básicos de Git permiten crear un repositorio, controlar los cambios realizados en los archivos y guardar diferentes versiones de un proyecto. Son las herramientas principales para trabajar con el control de versiones.
+
+git init (Inicializar): crea un nuevo repositorio Git en una carpeta determinada. A partir de ese momento, Git comienza a registrar los cambios realizados en los archivos del proyecto.
+git status (Estado): muestra información sobre el estado actual del repositorio. Permite saber qué archivos han sido modificados, cuáles están preparados para guardarse y si existen cambios pendientes de registrar.
+git add (Añadir): prepara los archivos para ser incluidos en el próximo guardado de cambios. Este paso se conoce como añadir archivos al área de preparación (staging area). Por ejemplo, git add archivo.txt añade un archivo concreto, mientras que git add . añade todos los cambios realizados.
+git commit (Confirmar cambios): guarda de forma permanente los cambios que estaban preparados con git add. Cada commit representa una versión del proyecto en un momento concreto y suele incluir un mensaje que explica qué se ha modificado.
+git log (Historial): muestra el historial de commits realizados en el repositorio. Permite consultar qué cambios se han guardado, cuándo se hicieron y quién los realizó.
+git revert (Revertir): crea un nuevo commit que deshace los cambios realizados en otro commit anterior. Es una forma segura de volver atrás sin eliminar el historial del proyecto.
+
+Las ramas (branches) y otras herramientas de Git permiten trabajar de forma más organizada, especialmente cuando un proyecto tiene varias funcionalidades en desarrollo o participan varios usuarios.
+
+git branch (Rama): permite crear, mostrar o gestionar ramas dentro de un repositorio. Una rama es una línea independiente de desarrollo que permite realizar cambios sin afectar al código principal. Por ejemplo, se puede crear una rama para desarrollar una nueva función y mantener la versión estable separada.
+git checkout -b (Crear y cambiar de rama): sirve para crear una nueva rama y cambiar automáticamente a ella en un solo paso. Es muy utilizado cuando se empieza a trabajar en una nueva característica o modificación. Por ejemplo:
+git checkout -b nueva-funcionalidad
+git merge (Fusionar ramas): permite unir los cambios de una rama con otra. Normalmente se utiliza para incorporar una funcionalidad terminada a la rama principal del proyecto.
+git stash (Guardar cambios temporalmente): permite guardar modificaciones que todavía no están listas para hacer un commit y retirarlas temporalmente del área de trabajo. Es útil cuando se necesita cambiar de rama rápidamente sin perder los cambios actuales. Más adelante, esos cambios pueden recuperarse.
+.gitignore (Ignorar archivos): es un archivo de configuración que indica a Git qué archivos o carpetas no deben ser incluidos en el control de versiones. Se suele utilizar para evitar subir archivos temporales, configuraciones privadas, archivos generados automáticamente o dependencias que no son necesarias en el repositorio.
+
+GitHub es una plataforma que permite alojar repositorios de Git en Internet y facilita la colaboración entre diferentes personas en un mismo proyecto. A través de GitHub se pueden compartir cambios, revisar código y trabajar de manera organizada utilizando repositorios remotos.
+
+Repositorio remoto: es una copia de un proyecto almacenada en un servidor online, como GitHub. Permite guardar el código fuera del ordenador local y sincronizar los cambios con otros colaboradores.
+git push (Subir cambios): se utiliza para enviar los commits realizados en el repositorio local hacia el repositorio remoto en GitHub. De esta forma, los cambios quedan almacenados en la plataforma y pueden ser vistos por otros usuarios.
+git pull (Actualizar cambios): permite descargar los cambios que existen en el repositorio remoto y combinarlos con la versión local. Se suele utilizar antes de comenzar a trabajar para tener la versión más reciente del proyecto.
+git clone (Clonar repositorio): crea una copia completa de un repositorio remoto en el ordenador. Permite descargar un proyecto existente desde GitHub para poder modificarlo o trabajar con él localmente.
+fork (Bifurcación): consiste en crear una copia de un repositorio de otro usuario dentro de la propia cuenta de GitHub. Se utiliza principalmente cuando se quiere modificar un proyecto sin afectar al repositorio original o cuando se desea colaborar en proyectos externos.
+Pull Request (PR): es una solicitud para incorporar cambios de una rama o repositorio a otro. Permite que otros miembros del equipo revisen el código, hagan comentarios y aprueben las modificaciones antes de integrarlas en el proyecto principal.
+Resolución de conflictos
+
+Un conflicto en Git aparece cuando dos cambios diferentes afectan a la misma parte de un archivo y Git no puede decidir automáticamente cuál debe conservar. Esto suele ocurrir cuando varias personas modifican la misma línea de código o cuando una rama tiene cambios diferentes a otra.
+
+Para resolver un conflicto, normalmente se siguen estos pasos:
+
+Identificar los archivos con conflictos mediante git status.
+Abrir los archivos afectados y revisar las diferencias marcadas por Git.
+Elegir qué cambios conservar o combinar manualmente.
+Guardar los archivos corregidos.
+Añadir los cambios con git add.
+Crear un nuevo commit para finalizar la resolución.
