@@ -1,1 +1,57 @@
 
+Git y GitHub están relacionados, pero cumplen funciones diferentes dentro del desarrollo de software.
+
+Git: es un sistema de control de versiones que se instala en el ordenador y permite registrar los cambios realizados en un proyecto. Gracias a Git, los desarrolladores pueden guardar diferentes versiones de sus archivos, volver a estados anteriores, trabajar en ramas diferentes y controlar la evolución de un proyecto.
+GitHub: es una plataforma online que utiliza Git para almacenar y compartir repositorios en Internet. Permite trabajar en equipo, guardar copias de seguridad de los proyectos, revisar cambios realizados por otros usuarios y colaborar en el desarrollo de software.
+
+En resumen, Git es la herramienta que controla las versiones de un proyecto, mientras que GitHub es un servicio web donde se pueden alojar y compartir esos proyectos utilizando Git.
+
+Instalación y configuración de Git
+
+Para empezar a utilizar Git, primero es necesario instalarlo en el equipo. Una vez instalado, se recomienda realizar una configuración inicial indicando la identidad del usuario que aparecerá asociada a los cambios realizados en los proyectos.
+
+Los dos comandos principales son:
+
+git config --global user.name
+Permite establecer el nombre del usuario que aparecerá en los registros de Git.
+git config --global user.email
+Sirve para configurar el correo electrónico asociado a la cuenta de Git. Normalmente se utiliza el mismo correo que está vinculado a la cuenta de GitHub.
+
+Los comandos básicos de Git permiten crear un repositorio, controlar los cambios realizados en los archivos y guardar diferentes versiones de un proyecto. Son las herramientas principales para trabajar con el control de versiones.
+
+git init (Inicializar): crea un nuevo repositorio Git en una carpeta determinada. A partir de ese momento, Git comienza a registrar los cambios realizados en los archivos del proyecto.
+git status (Estado): muestra información sobre el estado actual del repositorio. Permite saber qué archivos han sido modificados, cuáles están preparados para guardarse y si existen cambios pendientes de registrar.
+git add (Añadir): prepara los archivos para ser incluidos en el próximo guardado de cambios. Este paso se conoce como añadir archivos al área de preparación (staging area). Por ejemplo, git add archivo.txt añade un archivo concreto, mientras que git add . añade todos los cambios realizados.
+git commit (Confirmar cambios): guarda de forma permanente los cambios que estaban preparados con git add. Cada commit representa una versión del proyecto en un momento concreto y suele incluir un mensaje que explica qué se ha modificado.
+git log (Historial): muestra el historial de commits realizados en el repositorio. Permite consultar qué cambios se han guardado, cuándo se hicieron y quién los realizó.
+git revert (Revertir): crea un nuevo commit que deshace los cambios realizados en otro commit anterior. Es una forma segura de volver atrás sin eliminar el historial del proyecto.
+
+Las ramas (branches) y otras herramientas de Git permiten trabajar de forma más organizada, especialmente cuando un proyecto tiene varias funcionalidades en desarrollo o participan varios usuarios.
+
+git branch (Rama): permite crear, mostrar o gestionar ramas dentro de un repositorio. Una rama es una línea independiente de desarrollo que permite realizar cambios sin afectar al código principal. Por ejemplo, se puede crear una rama para desarrollar una nueva función y mantener la versión estable separada.
+git checkout -b (Crear y cambiar de rama): sirve para crear una nueva rama y cambiar automáticamente a ella en un solo paso. Es muy utilizado cuando se empieza a trabajar en una nueva característica o modificación. Por ejemplo:
+git checkout -b nueva-funcionalidad
+git merge (Fusionar ramas): permite unir los cambios de una rama con otra. Normalmente se utiliza para incorporar una funcionalidad terminada a la rama principal del proyecto.
+git stash (Guardar cambios temporalmente): permite guardar modificaciones que todavía no están listas para hacer un commit y retirarlas temporalmente del área de trabajo. Es útil cuando se necesita cambiar de rama rápidamente sin perder los cambios actuales. Más adelante, esos cambios pueden recuperarse.
+.gitignore (Ignorar archivos): es un archivo de configuración que indica a Git qué archivos o carpetas no deben ser incluidos en el control de versiones. Se suele utilizar para evitar subir archivos temporales, configuraciones privadas, archivos generados automáticamente o dependencias que no son necesarias en el repositorio.
+
+GitHub es una plataforma que permite alojar repositorios de Git en Internet y facilita la colaboración entre diferentes personas en un mismo proyecto. A través de GitHub se pueden compartir cambios, revisar código y trabajar de manera organizada utilizando repositorios remotos.
+
+Repositorio remoto: es una copia de un proyecto almacenada en un servidor online, como GitHub. Permite guardar el código fuera del ordenador local y sincronizar los cambios con otros colaboradores.
+git push (Subir cambios): se utiliza para enviar los commits realizados en el repositorio local hacia el repositorio remoto en GitHub. De esta forma, los cambios quedan almacenados en la plataforma y pueden ser vistos por otros usuarios.
+git pull (Actualizar cambios): permite descargar los cambios que existen en el repositorio remoto y combinarlos con la versión local. Se suele utilizar antes de comenzar a trabajar para tener la versión más reciente del proyecto.
+git clone (Clonar repositorio): crea una copia completa de un repositorio remoto en el ordenador. Permite descargar un proyecto existente desde GitHub para poder modificarlo o trabajar con él localmente.
+fork (Bifurcación): consiste en crear una copia de un repositorio de otro usuario dentro de la propia cuenta de GitHub. Se utiliza principalmente cuando se quiere modificar un proyecto sin afectar al repositorio original o cuando se desea colaborar en proyectos externos.
+Pull Request (PR): es una solicitud para incorporar cambios de una rama o repositorio a otro. Permite que otros miembros del equipo revisen el código, hagan comentarios y aprueben las modificaciones antes de integrarlas en el proyecto principal.
+Resolución de conflictos
+
+Un conflicto en Git aparece cuando dos cambios diferentes afectan a la misma parte de un archivo y Git no puede decidir automáticamente cuál debe conservar. Esto suele ocurrir cuando varias personas modifican la misma línea de código o cuando una rama tiene cambios diferentes a otra.
+
+Para resolver un conflicto, normalmente se siguen estos pasos:
+
+Identificar los archivos con conflictos mediante git status.
+Abrir los archivos afectados y revisar las diferencias marcadas por Git.
+Elegir qué cambios conservar o combinar manualmente.
+Guardar los archivos corregidos.
+Añadir los cambios con git add.
+Crear un nuevo commit para finalizar la resolución.
