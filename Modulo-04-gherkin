@@ -1,1 +1,30 @@
 
+Modulo-04-pepinillo
+
+Gherkin es un lenguaje de escritura sencillo y fácil de entender que se utiliza para describir el comportamiento esperado de una aplicación. Su principal característica es que emplea un lenguaje muy cercano al lenguaje natural, por lo que puede ser leído tanto por desarrolladores como por testers, analistas o clientes, incluso aunque no tengan conocimientos de programación.
+
+En la metodología BDD (Behavior-Driven Development) o Desarrollo Guiado por el Comportamiento, Gherkin sirve para definir de forma clara cómo debe comportarse una aplicación en diferentes situaciones. De esta manera, todos los miembros del equipo comparten una misma comprensión de los requisitos antes de comenzar el desarrollo o las pruebas.
+
+Los escenarios en Gherkin suelen escribirse utilizando palabras clave como Feature (Funcionalidad), Scenario (Escenario), Given (Dado), When (Cuando) y Then (Entonces). Esta estructura permite describir las condiciones iniciales, la acción que realiza el usuario y el resultado esperado de una forma ordenada y fácil de seguir.
+
+En resumen, Gherkin es una herramienta fundamental en BDD porque facilita la comunicación entre todas las personas involucradas en el proyecto y permite convertir los requisitos del negocio en escenarios de prueba claros, comprensibles y fáciles de automatizar.
+
+La sintaxis de Gherkin utiliza una serie de palabras clave que permiten escribir escenarios de prueba de una forma estructurada y fácil de entender. Cada una de ellas tiene una función específica dentro de la descripción del comportamiento de una aplicación.
+
+Feature (Funcionalidad): se utiliza para indicar la funcionalidad o característica que se quiere describir. Normalmente incluye una breve explicación de qué parte del sistema se va a probar.
+Scenario (Escenario): define un caso concreto dentro de una funcionalidad. Cada escenario representa una situación que se quiere comprobar y describe un comportamiento específico de la aplicación.
+Given (Dado): establece las condiciones iniciales del escenario, es decir, el estado en el que se encuentra el sistema antes de realizar una acción. Sirve para indicar el contexto de la prueba.
+When (Cuando): describe la acción que realiza el usuario o el evento que ocurre durante el escenario. Es el paso donde se indica qué sucede en la prueba.
+Then (Entonces): define el resultado esperado después de realizar la acción. Se utiliza para comprobar si el comportamiento de la aplicación es el correcto.
+And (Y): permite añadir más pasos relacionados con el contexto, las acciones o los resultados, evitando tener que repetir palabras clave como Given, When o Then.
+
+Scenario Outline y Examples son elementos de Gherkin que permiten crear escenarios parametrizados, es decir, realizar la misma prueba varias veces utilizando diferentes datos sin tener que escribir un escenario nuevo para cada caso.
+
+Scenario Outline (Esquema del escenario): se utiliza cuando un escenario tiene la misma estructura, pero necesita probar distintos valores. En lugar de escribir varias veces los mismos pasos, se utilizan variables entre símbolos de menor y mayor (< >) que después serán sustituidas por los datos de la tabla de ejemplos.
+Examples (Ejemplos): contiene la información que se utilizará para reemplazar las variables del Scenario Outline. Los datos se organizan en una tabla, donde cada fila representa una ejecución diferente del escenario.
+
+En Gherkin, existen elementos adicionales que ayudan a organizar mejor los escenarios y hacer que los archivos de pruebas sean más claros y fáciles de mantener.
+
+Background (Contexto): se utiliza para definir pasos comunes que deben ejecutarse antes de todos los escenarios de una misma funcionalidad. De esta forma, se evita repetir las mismas instrucciones en cada Scenario. Por ejemplo, si todos los escenarios necesitan que el usuario esté registrado o que se abra una página concreta, esos pasos pueden colocarse en un Background.
+@Tags (Etiquetas): son etiquetas que se escriben utilizando el símbolo @ y sirven para clasificar y organizar escenarios o funcionalidades. Permiten seleccionar qué pruebas se quieren ejecutar, por ejemplo, pruebas de inicio de sesión, pruebas críticas o pruebas de una determinada sección de la aplicación.
+Comentarios: se utilizan para añadir aclaraciones dentro del archivo Gherkin sin que afecten a la ejecución de las pruebas. Normalmente se escriben comenzando la línea con el símbolo #. Son útiles para explicar partes del código, añadir notas o facilitar la comprensión del equipo.
